@@ -7,10 +7,10 @@ $\mathbb{\color{orange}WIKI \space HERE:}$ [Program Configurations](https://gith
 title: Windows 10 programs
 ---
 flowchart LR
-    A[Windows 10] --> B[Basic]
-    A --> Dev[Development]
-    A --> Rec[Record]
-    A --> Ent[Entertainment]
+    A[Windows 10]:::classA --> B[Basic]:::classBasic
+    A --> Dev[Development]:::classDev
+    A --> Rec[Record]:::classRec
+    A --> Ent[Entertainment]:::classEnt
 
     B --> Wt[Windows Terminal]
     B --> Pws[Powershell]
@@ -32,4 +32,11 @@ flowchart LR
     Ent --> NF[Netflix]
     Ent --> AM[Amazon Prime Video]
     Ent --> MT[Minecraft]
+
+    classDef classA fill:blue
+    classDef classBasic fill:darkcyan
+    classDef classDev fill:purple
+    classDef classRec fill:darkred
+    classDef classEnt fill:#b27300
+  
 ```
